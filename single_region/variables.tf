@@ -7,13 +7,7 @@ variable "aws_region" {
   description = "AWS Region"
 }
 
-variable "amis" {
-  description = "AMIs by region"
-
-  default = {
-    eu-west-2 = "ami-e1768386" # Amazon Linux 2 AMI (HVM), SSD Volume Type - ami-e1768386
-  }
-}
+variable "amis" {}
 
 variable "vpc_cidr" {
   description = "CIDR for the whole VPC"
